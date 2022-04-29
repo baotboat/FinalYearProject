@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mechanic_navigation"
+    app:startDestination="@+id/navigation_find_customer_mech">
+
+    <fragment
+        android:id="@+id/navigation_appoint_mech"
+        android:name="com.example.android.finalyearproject.mechanic.appoint.AppointMechFragment"
+        android:label="Appoint"
+        tools:layout="@layout/fragment_appoint_mech" >
+        <action
+            android:id="@+id/action_navigation_appoint_mech_to_detailAppointMechFragment"
+            app:destination="@id/detailAppointMechFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_find_customer_mech"
+        android:name="com.example.android.finalyearproject.mechanic.findCustomer.FindCustomerFragment"
+        android:label="Find Customer"
+        tools:layout="@layout/fragment_find_customer" >
+        <action
+            android:id="@+id/action_navigation_find_customer_mech_to_myOfferFragment"
+            app:destination="@id/myOfferFragment" />
+        <action
+            android:id="@+id/action_findCustomerMech_to_detailTaskFindCustomerFragment"
+            app:destination="@id/detailTaskFindCustomerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile_mech"
+        android:name="com.example.android.finalyearproject.mechanic.profile.ProfileMechFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_mech" />
+
+    <fragment
+        android:id="@+id/myOfferFragment"
+        android:name="com.example.android.finalyearproject.mechanic.findCustomer.myOffer.MyOfferFragment"
+        android:label="My Offer"
+        tools:layout="@layout/fragment_my_offer" />
+
+    <fragment
+        android:id="@+id/detailTaskFindCustomerFragment"
+        android:name="com.example.android.finalyearproject.mechanic.findCustomer.detailTask.DetailTaskFindCustomerFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/fragment_detail_task_find_customer">
+        <action
+            android:id="@+id/action_detailTaskFindCustomerFragment_to_findCustomerMech"
+            app:destination="@id/navigation_find_customer_mech" />
+        <argument
+            android:name="taskData"
+            app:argType="com.example.android.finalyearproject.model.Task" />
+        <action
+            android:id="@+id/action_detailTaskFindCustomerFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailAppointMechFragment"
+        android:name="com.example.android.finalyearproject.mechanic.appoint.detailAppoint.DetailAppointMechFragment"
+        android:label="Appoint Detail"
+        tools:layout="@layout/fragment_detail_appoint_mech">
+        <action
+            android:id="@+id/action_detailAppointMechFragment_to_detailTaskFindCustomerFragment"
+            app:destination="@id/detailTaskFindCustomerFragment" />
+        <argument
+            android:name="taskData"
+            app:argType="com.example.android.finalyearproject.model.Task" />
+        <action
+            android:id="@+id/action_detailAppointMechFragment_to_profileFragment"
+            app:destination="@id/profileFragment" >
+            <argument
+                android:name="uId" />
+        </action>
+        <action
+            android:id="@+id/action_detailAppointMechFragment_to_navigation_appoint_mech"
+            app:destination="@id/navigation_appoint_mech" />
+        <action
+            android:id="@+id/action_detailAppointMechFragment_to_ratingMechFragment"
+            app:destination="@id/ratingMechFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.android.finalyearproject.customer.profile.ProfileFragment"
+        android:label="Customer Profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="uId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ratingMechFragment"
+        android:name="com.example.android.finalyearproject.mechanic.appoint.rating.RatingMechFragment"
+        android:label="Rating"
+        tools:layout="@layout/fragment_rating_mech" >
+        <argument
+            android:name="customerUId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_ratingMechFragment_to_navigation_appoint_mech"
+            app:destination="@id/navigation_appoint_mech" />
+    </fragment>
+</navigation>

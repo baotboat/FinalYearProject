@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDialogFilterTaskTypePrefix"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ประเภท"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutCheckBoxFirstColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskTypePrefix">
+
+            <CheckBox
+                android:id="@+id/cbFilterTypeRefri"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ตู้เย็น" />
+
+            <CheckBox
+                android:id="@+id/cbFilterTypeTV"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ทีวี" />
+
+            <CheckBox
+                android:id="@+id/cbFilterTypeFan"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="พัดลม" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dialogTypeFilterDelimeter"
+            android:layout_width="1dp"
+            android:layout_height="180dp"
+            android:background="@android:color/holo_red_light"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutCheckBoxTwoColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/dialogTypeFilterDelimeter"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskTypePrefix">
+
+            <CheckBox
+                android:id="@+id/cbFilterTypeAir"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แอร์" />
+
+            <CheckBox
+                android:id="@+id/cbFilterTypeWashMech"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="เครื่องซักผ้า" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDialogFilterTaskDistanceSubtitle"
+            style="@style/Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ระยะห่าง"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCheckBoxFirstColumn" />
+
+        <TextView
+            android:id="@+id/tvDialogFilterTaskDistancePrefix"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="60dp"
+            android:text="ไม่เกิน"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskDistanceSubtitle" />
+
+        <EditText
+            android:id="@+id/edtDialogFilterTaskDistance"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_price_background"
+            app:layout_constraintStart_toEndOf="@+id/tvDialogFilterTaskDistancePrefix"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskDistanceSubtitle" />
+
+        <TextView
+            android:id="@+id/tvDialogFilterTaskDistanceSuffix"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="12dp"
+            android:text="KM"
+            app:layout_constraintStart_toEndOf="@+id/edtDialogFilterTaskDistance"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskDistanceSubtitle" />
+
+
+        <Button
+            android:id="@+id/btnSumbitFilterTask"
+            android:layout_width="76dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="ยืนยัน"
+            style="@style/Button.small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogFilterTaskDistanceSuffix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemMechOffer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemProfileMech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/green_app" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechCustomerPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ลูกค้า"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechCustomer"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemProfileMechCustomerPrefix"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="บังโต หิวหมู" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechTypePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ประเภท"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemProfileMechCustomer" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechType"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="-"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemProfileMechTypePrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemProfileMechCustomerPrefix"
+                    tools:text="ึพัดลม" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechBrandPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ยี่ห้อ"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemProfileMechTypePrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechBrand"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvItemProfileMechBrandPrefix"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemProfileMechBrandPrefix"
+                    app:layout_constraintTop_toTopOf="@+id/tvItemProfileMechBrandPrefix"
+                    tools:text="LG" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechSymptomPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="อาการ"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemProfileMechBrandPrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemProfileMechSymptom"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvItemProfileMechSymptomPrefix"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemProfileMechSymptomPrefix"
+                    app:layout_constraintTop_toTopOf="@+id/tvItemProfileMechSymptomPrefix"
+                    tools:text="เปิดไม่ติด" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

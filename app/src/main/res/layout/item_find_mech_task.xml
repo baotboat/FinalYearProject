@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemFindMechanic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemFindCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/green_app" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvItemFindMechPostedDate"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechSymptom"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:text="2022/03/21" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechPostedDatePrefix"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvItemFindMechPostedDate"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechSymptom"
+                    app:layout_constraintVertical_bias="1.0"
+                    android:text="วันที่โพสต์" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechType"
+                    style="@style/Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="เครื่องซักผ้า" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechStatus"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemFindMechType"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="กำลังหาช่าง" />
+
+                <ImageView
+                    android:id="@+id/imgItemFindMechPreview"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_loading_48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechType" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechBrandPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:text="ยี่ห้อ"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemFindMechPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechStatus" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechBrand"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemFindMechBrandPrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechStatus"
+                    tools:text="Samsung" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechSymptomPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="อาการ"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemFindMechPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechBrandPrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemFindMechSymptom"
+                    style="@style/Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemFindMechSymptomPrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemFindMechBrandPrefix"
+                    tools:text="ฝาเปิดไม่ออกง่า ทำไงดี คิดไม่ออกเลยจุงเบยง่าๆๆๆๆๆๆๆ ทำไมฝาเปิดไม่ออก ทำไมไม่ยอมเปิด" />
+
+                <ImageView
+                    android:id="@+id/imgItemFindMechTaskRef"
+                    android:layout_width="34dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_similar_task"
+                    app:layout_constraintEnd_toStartOf="@+id/imgItemFindMechChooseMech"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgItemFindMechChooseMech"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_mech_offer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

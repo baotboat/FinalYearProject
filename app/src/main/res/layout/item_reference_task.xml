@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemMechOffer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemReferTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/green_app" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskType"
+                    style="@style/Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="ึพัดลม" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskBracket1"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="[ "
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskType"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskBrand"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskBracket1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Samsung" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskSpecPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="รุ่น"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskBrand"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskSpec"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskSpecPrefix"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="XXL47396" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskBracket2"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text=" ]"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskSpec"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskDescPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="รายละเอียด"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskSpec" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskDesc"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskDescPrefix"
+                    tools:text="เครื่องซักผ้าฝาหน้า (7 kg) รุ่น WW70T3020WW/ST+ZWHITE ขนาด 59.5 ซม. x 85 ซม. x 44 ซม." />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskSymptomPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="อาการ"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskDesc" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskSymptom"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskSymptomPrefix"
+                    tools:text="เปิดฝาเครื่องไม่ออกง่า" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskPricePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ราคา"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskSymptom" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskPrice"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskPricePrefix"
+                    tools:text="2500" />
+
+                <TextView
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" ฿"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskPricePrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskDatePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="48dp"
+                    android:text="วันที่นัดหมาย"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskSymptom" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskDate"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemReferTaskPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskDatePrefix"
+                    tools:text="20/10/2011" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskMechNamePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="ชื่อช่างซ่อม"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskPrice" />
+
+                <TextView
+                    android:id="@+id/tvItemReferTaskMechName"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemReferTaskMechNamePrefix"
+                    tools:text="ช่างโอ รีโอ้" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

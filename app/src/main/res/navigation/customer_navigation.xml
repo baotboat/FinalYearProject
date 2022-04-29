@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_navigation"
+    app:startDestination="@+id/navigation_find_mechanic" >
+
+    <fragment
+        android:id="@+id/navigation_appoint"
+        android:name="com.example.android.finalyearproject.customer.appoint.AppointFragment"
+        android:label="Appoint"
+        tools:layout="@layout/fragment_appoint" >
+        <action
+            android:id="@+id/action_appoint_to_detailAppointFragment"
+            app:destination="@id/detailAppointFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_find_mechanic"
+        android:name="com.example.android.finalyearproject.customer.findMech.FindMechFragment"
+        android:label="Find Technician"
+        tools:layout="@layout/fragment_find_mech" >
+        <action
+            android:id="@+id/action_navigation_find_mechanic_to_createTaskFragment"
+            app:destination="@id/createTaskFragment" />
+        <action
+            android:id="@+id/action_find_mechanic_to_mechOffer"
+            app:destination="@id/mechOfferFragment" />
+        <action
+            android:id="@+id/action_find_mechanic_to_detail_task_find_mech"
+            app:destination="@id/detailTaskFindMechFragment" />
+        <action
+            android:id="@+id/action_find_mechanic_to_referTaskFragment"
+            app:destination="@id/referTaskFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.android.finalyearproject.customer.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_selectAddressFromMap"
+            app:destination="@id/selectAddressFromMap" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createTaskFragment"
+        android:name="com.example.android.finalyearproject.customer.createTask.CreateTaskFragment"
+        android:label="Create Task"
+        tools:layout="@layout/fragment_create_task" >
+        <action
+            android:id="@+id/action_createTaskFragment_to_navigation_find_mechanic"
+            app:destination="@id/navigation_find_mechanic" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mechOfferFragment"
+        android:name="com.example.android.finalyearproject.customer.findMech.mechOffer.MechOfferFragment"
+        android:label="Offer"
+        tools:layout="@layout/fragment_mech_offer" >
+        <argument
+            android:name="taskId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_mechOfferFragment_to_navigation_find_mechanic"
+            app:destination="@id/navigation_find_mechanic" />
+        <action
+            android:id="@+id/action_mechOfferFragment_to_profileMechFragment"
+            app:destination="@id/profileMechFragment"
+            app:launchSingleTop="false">
+            <argument
+                android:name="mechUId"
+                android:defaultValue="null" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailTaskFindMechFragment"
+        android:name="com.example.android.finalyearproject.customer.findMech.detailTask.DetailTaskFindMechFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/fragment_detail_task_find_mech">
+        <argument
+            android:name="taskData"
+            app:argType="com.example.android.finalyearproject.model.Task" />
+        <action
+            android:id="@+id/action_detailTaskFindMechFragment_to_navigation_find_mechanic"
+            app:destination="@id/navigation_find_mechanic" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileMechFragment"
+        android:name="com.example.android.finalyearproject.mechanic.profile.ProfileMechFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_mech" >
+        <argument
+            android:name="uId"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailAppointFragment"
+        android:name="com.example.android.finalyearproject.customer.appoint.detailAppoint.DetailAppointFragment"
+        android:label="Appoint Detail"
+        tools:layout="@layout/fragment_detail_appoint">
+        <argument
+            android:name="taskData"
+            app:argType="com.example.android.finalyearproject.model.Task" />
+        <action
+            android:id="@+id/action_detailAppointFragment_to_profileMechFragment"
+            app:destination="@id/profileMechFragment" />
+        <action
+            android:id="@+id/action_detailAppointFragment_to_navigation_appoint"
+            app:destination="@id/navigation_appoint" />
+        <action
+            android:id="@+id/action_detailAppointFragment_to_ratingFragment"
+            app:destination="@id/ratingFragment" />
+        <action
+            android:id="@+id/action_detailAppointFragment_to_detailTaskFindCustomerFragment3"
+            app:destination="@id/detailTaskFindCustomerFragment3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.example.android.finalyearproject.customer.appoint.rating.RatingFragment"
+        android:label="Rating"
+        tools:layout="@layout/fragment_rating">
+    <action
+            android:id="@+id/action_ratingFragment_to_navigation_appoint"
+            app:destination="@id/navigation_appoint" />
+        <argument
+            android:name="mechUId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/referTaskFragment"
+        android:name="com.example.android.finalyearproject.customer.findMech.referTask.ReferTaskFragment"
+        android:label="Similar Task"
+        tools:layout="@layout/fragment_reference_task" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="chipSymptom"
+            app:argType="string" />
+        <argument
+            android:name="spec"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectAddressFromMap"
+        android:name="com.example.android.finalyearproject.SelectAddressFromMap"
+        android:label="Map"
+        tools:layout="@layout/fragment_select_address_from_map"/>
+
+    <fragment
+        android:id="@+id/detailTaskFindCustomerFragment3"
+        android:name="com.example.android.finalyearproject.mechanic.findCustomer.detailTask.DetailTaskFindCustomerFragment"
+        android:label="Task Detail"
+        tools:layout="@layout/fragment_detail_task_find_customer">
+        <argument
+            android:name="taskData"
+            app:argType="com.example.android.finalyearproject.model.Task" />
+    </fragment>
+
+
+</navigation>

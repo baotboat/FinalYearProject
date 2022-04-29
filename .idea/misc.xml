@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sukaw/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.271875" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/border_grey_background.xml" value="0.139" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/drop_down_background.xml" value="0.1" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/edit_text_background.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/edit_text_price_background.xml" value="0.1" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_appoint.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_baseline_article_24.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2518518518518518" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_baseline_person_search_24.xml" value="0.2665985699693565" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.13425925925925927" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_filter.xml" value="0.136" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_filter_dropdown.xml" value="0.1" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_find.xml" value="0.271875" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_history_svgrepo_com.xml" value="0.2665985699693565" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2665985699693565" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_like.xml" value="0.1725" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_loading_48dp.xml" value="0.1725" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_logo.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_logo1.xml" value="0.2665985699693565" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_mech_offer.xml" value="0.2665985699693565" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_my_offer.xml" value="0.1365" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_not_upload_img_refrigerator.xml" value="0.242" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.271875" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_profile.xml" value="0.165" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_profile_.xml" value="0.1585" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_profile_mech_preview.xml" value="0.116" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_profile_preview.xml" value="0.236" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_reccomend.xml" value="0.113" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_similar_task.xml" value="0.271875" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_technician_with_helmet_svgrepo_com.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/ic_washing_machine.xml" value="0.271875" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/offer_price_background.xml" value="0.1615" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/seekbar_drawable.xml" value="0.144" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/seekbar_thumb_drawable.xml" value="0.144" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/shadow.xml" value="0.625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/spinner_background.xml" value="0.26481481481481484" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/test.xml" value="0.22314814814814815" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/text_view_detail_task_background.xml" value="0.106" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/drawable/touch_icon.xml" value="0.1375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/font/font.xml" value="0.29010416666666666" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/activity_register.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/activity_sign_in.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/appoint_fragment.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/change_profile.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/dialog_change_profile.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/dialog_change_profile_mech.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/dialog_filter_task.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/dialog_forget_password.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/dialog_type_filter.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/find_mechanic_fragment.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_appoint.xml" value="0.1" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_appoint_mech.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_create_task.xml" value="0.28348214285714285" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_detail_appoint.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_detail_appoint_mech.xml" value="0.32854209445585214" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_detail_task_find_customer.xml" value="0.353887399463807" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_detail_task_find_mech.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_find_customer.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_find_mech.xml" value="0.25" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_forget_password.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_mech_offer.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_my_offer.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_notification_mech.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_notifications.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_profile.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_profile_mech.xml" value="0.23782234957020057" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_rating.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_rating_mech.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_reference_task.xml" value="0.19025224454895254" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_register.xml" value="0.24259259259259258" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_register_mech.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_register_select_role.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_select_address_from_map.xml" value="0.20649850363403163" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fragment_sign_in.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/fregment_register_select_role.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_appoint.xml" value="0.1" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_appoint_mech.xml" value="0.45" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_chip_symptom.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_chip_type.xml" value="0.2515625" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_find_customer_filter.xml" value="0.55" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_find_customer_task.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_find_mech_task.xml" value="0.41627906976744183" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_find_mechanic_task.xml" value="0.335" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_mech_offer.xml" value="0.3160493827160494" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_my_offer.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_profile_mech_history_task.xml" value="0.375" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/item_reference_task.xml" value="0.45" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/layout/profile_fragment.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.125" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/menu/bottom_nav_menu_mech.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/sukaw/Desktop/FinalYearProject/app/src/main/res/xml/provider_paths.xml" value="0.2515625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

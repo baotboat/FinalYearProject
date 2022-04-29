@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Find Technician</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="maps_api_key">AIzaSyCJr6aY8wItuO9kR-fpyINpJa5EXoR8tyI</string>
+    <string-array name="type_array">
+        <item>ตู้เย็น</item>
+        <item>ทีวี</item>
+        <item>พัดลม</item>
+        <item>แอร์</item>
+        <item>เครื่องซักผ้า</item>
+    </string-array>
+    <string-array name="brand_refri_array">
+        <item>LG</item>
+        <item>Samsung</item>
+        <item>Mitsubishi</item>
+        <item>Hitachi</item>
+        <item>Toshiba</item>
+        <item>Haier</item>
+    </string-array>
+    <string-array name="brand_tv_array">
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Sony</item>
+        <item>TCL</item>
+        <item>Sharp</item>
+        <item>Toshiba</item>
+    </string-array>
+    <string-array name="brand_fan_array">
+        <item>Hatari</item>
+        <item>Sharp</item>
+        <item>Xiaomi</item>
+        <item>Mitsubishi</item>
+        <item>Tefal</item>
+        <item>Dyson</item>
+    </string-array>
+    <string-array name="brand_air_array">
+        <item>Carrier</item>
+        <item>Daikin</item>
+        <item>Samsung</item>
+        <item>Haier</item>
+        <item>Mitsubishi</item>
+    </string-array>
+    <string-array name="brand_washing_machine_array">
+        <item>Samsung</item>
+        <item>LG</item>
+        <item>Electrolux</item>
+        <item>Hitachi</item>
+        <item>Sharp</item>
+        <item>Toshiba</item>
+    </string-array>
+</resources>

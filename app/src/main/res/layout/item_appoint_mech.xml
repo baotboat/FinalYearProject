@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemFindMechanic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItemAppointMech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/green_app" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechType"
+                    style="@style/Subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="เครื่องซักผ้า" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechStatus"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemAppointMechType"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="นัดหมานสำเร็จ" />
+
+                <ImageView
+                    android:id="@+id/imgItemAppointMechPreview"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_loading_48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechType" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechMechNamePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="ลูกค้า"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemAppointMechPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechStatus" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechMechName"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemAppointMechMechNamePrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechStatus"
+                    tools:text="หมูหัน หันหมู" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechDatePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="วันที่นัดหมาย"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemAppointMechPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechMechNamePrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechDate"
+                    style="@style/Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemAppointMechDatePrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechMechNamePrefix"
+                    tools:text="20/10/2022" />
+
+                <TextView
+                    android:id="@+id/tvItemAppointMechDescPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="อาการ"
+                    app:layout_constraintStart_toEndOf="@+id/imgItemAppointMechPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechDatePrefix" />
+                <TextView
+                    android:id="@+id/tvItemAppointMechSymptom"
+                    style="@style/Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemAppointMechDescPrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemAppointMechDatePrefix"
+                    tools:text="wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

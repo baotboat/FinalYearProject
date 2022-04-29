@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".mechanic.profile.ProfileMechFragment">
+
+        <ImageView
+            android:id="@+id/imgProfileMech"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_profile_mech_preview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgProfileMechLoading"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/ic_loading_48dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnProfileMechChangeProfile"
+            style="@style/Button"
+            android:layout_width="110dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:text="แก้ไขข้อมูล"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfileMech" />
+
+        <Button
+            android:id="@+id/btnProfileMechLogout"
+            style="@style/Button"
+            android:layout_width="110dp"
+            android:layout_height="44dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="ออกจากระบบ"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnProfileMechChangeProfile" />
+
+        <TextView
+            android:id="@+id/tvProfileMechNamePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="ชื่อ"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProfileMechName"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechNamePrefix"
+            tools:text="บังโต หิวหมู" />
+
+        <TextView
+            android:id="@+id/tvProfileMechRatingPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="คะแนน"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechName" />
+
+        <TextView
+            android:id="@+id/tvProfileMechRating"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechRatingPrefix"
+            tools:text="ึ74" />
+
+        <TextView
+            android:id="@+id/tvProfileMechTypePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="ประเภทงาน"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechRating" />
+
+        <TextView
+            android:id="@+id/tvProfileMechType"
+            style="@style/Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgProfileMech"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechTypePrefix"
+            tools:text="พัดลม, ทีวี" />
+
+        <TextView
+            android:id="@+id/tvProfileMechDescPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="รายละเอียด"
+            app:layout_constraintStart_toEndOf="@+id/btnProfileMechChangeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechType"
+            app:layout_goneMarginStart="0dp" />
+
+        <TextView
+            android:id="@+id/tvProfileMechDesc"
+            style="@style/Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnProfileMechChangeProfile"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechDescPrefix"
+            app:layout_goneMarginStart="0dp"
+            tools:text="ประสบการณ์การทำงานที่บริษัท ช่าง" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierProfileMech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="btnProfileMechLogout, tvProfileMechDesc" />
+
+        <TextView
+            android:id="@+id/tvProfileMechAddressPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ที่อยู่"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barrierProfileMech"
+            app:layout_goneMarginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvProfileMechAddress"
+            style="@style/Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechAddressPrefix"
+            tools:text="wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" />
+
+        <TextView
+            android:id="@+id/tvProfileMechPhonePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="เบอร์ติดต่อ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechAddress" />
+
+        <TextView
+            android:id="@+id/tvProfileMechPhone"
+            style="@style/Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechPhonePrefix"
+            tools:text="0953432435" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutAmountTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechPhone">
+
+            <View
+                android:id="@+id/delimiterAmountTask"
+                android:layout_width="0.1dp"
+                android:layout_height="82dp"
+                android:background="@android:color/holo_red_light"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toStartOf="@+id/delimiterAmountTask"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/tvProfileMechSucceedTaskPrefix"
+                        style="@style/Subtitle.black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="งานที่สำเร็จ"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProfileMechDesc"
+                        tools:text="งานที่สำเร็จ" />
+
+                    <TextView
+                        android:id="@+id/tvProfileMechSucceedTask"
+                        style="@style/Body.green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="26dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProfileMechSucceedTaskPrefix"
+                        tools:text="29" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/delimiterAmountTask"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/tvProfileMechFailedTaskPrefix"
+                        style="@style/Subtitle.black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="งานที่ไม่สำเร็จ"
+                        app:layout_constraintStart_toEndOf="@+id/tvProfileMechSucceedTaskPrefix"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProfileMechDesc"
+                        tools:text="งานที่ไม่สำเร็จ" />
+
+                    <TextView
+                        android:id="@+id/tvProfileMechFailedTask"
+                        style="@style/Body.green"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="26dp"
+                        app:layout_constraintStart_toStartOf="@+id/tvProfileMechFailedTaskPrefix"
+                        app:layout_constraintTop_toBottomOf="@+id/tvProfileMechFailedTaskPrefix"
+                        tools:text="1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvProfileMechHistoryPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ประวัติงาน"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutAmountTask"
+            tools:text="ประวัติงาน" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvProfileMechTaskHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileMechHistoryPrefix" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

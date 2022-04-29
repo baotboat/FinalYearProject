@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgItemDetailAppointMechPreview"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_loading_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechCustomerNamePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp"
+            android:text="ลูกค้า"
+            app:layout_constraintStart_toEndOf="@+id/imgItemDetailAppointMechPreview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechCustomerName"
+            style="@style/Body.linking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@+id/tvItemDetailAppointMechCustomerNamePrefix"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="หมูหัน หันหมู" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechPricePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="ราคา"
+            app:layout_constraintStart_toEndOf="@+id/imgItemDetailAppointMechPreview"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechCustomerNamePrefix" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechPrice"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/tvItemDetailAppointMechPricePrefix"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechCustomerNamePrefix"
+            tools:text="20/10/2022" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechDatePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="วันที่นัดหมาย"
+            app:layout_constraintStart_toEndOf="@+id/imgItemDetailAppointMechPreview"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPricePrefix" />
+
+        <TextView
+            android:id="@+id/tvItemDetailAppointMechDate"
+            style="@style/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/tvItemDetailAppointMechDatePrefix"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPricePrefix"
+            tools:text="20/10/2022" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechAddressPrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="สถานที่นัดหมาย" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechAddress"
+        style="@style/Body.linking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="23/333 เพลินจิต กทม. 10537" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechTypePrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ประเภท" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechType"
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="พัดลม" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechBrandPrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ยี่ห้อ" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechBrand"
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Samsung" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechSymptomPrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="อาการที่พบ" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechSymptom"
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="3"
+        tools:text="คอหัก หมุนไม้ได้ หมุนแล้วมีเสียง" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointAdditionalInfo"
+        style="@style/Body.linking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ดูรายละเอียดเพิ่มเติม >" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechShowConfirmPricePrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="ค่าซ่อม" />
+
+    <TextView
+        android:id="@+id/tvItemDetailAppointMechShowConfirmPrice"
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:text="500 ฿" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetailAppointMechPayout"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="22dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvItemDetailAppointMechPayoutHeader"
+                style="@style/Subtitle.black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="สถานะการจ่ายเงิน"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutItemDetailAppointMechConfirmPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPayoutHeader"
+                app:layout_constraintStart_toStartOf="parent" >
+
+                <TextView
+                    android:id="@+id/tvItemDetailAppointMechConfirmPricePrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ยืนยันค่าซ่อม"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edtItemDetailAppointMechConfirmPrice"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border_grey_background"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechConfirmPricePrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemDetailAppointMechConfirmPriceSuffix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:text="บาท"
+                    app:layout_constraintStart_toEndOf="@+id/edtItemDetailAppointMechConfirmPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechConfirmPricePrefix" />
+
+                <TextView
+                    android:id="@+id/tvItemDetailAppointMechNotInPriceRange"
+                    style="@style/WarningMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ราคาต้องอยู่ใน\nช่วงราคาที่เสนอไป"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemDetailAppointMechConfirmPriceSuffix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechConfirmPricePrefix"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvItemDetailAppointMechNotFillPrice"
+                    style="@style/WarningMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:text="กรุณากรอกราคา"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toEndOf="@+id/tvItemDetailAppointMechConfirmPriceSuffix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechConfirmPricePrefix"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnItemDetailAppointMechSubmit"
+                    style="@style/Button.small"
+                    android:layout_width="68dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="ยืนยัน"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechConfirmPricePrefix" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvItemDetailAppointMechWaitCustomerPay"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="กำลังรอลูกค้าจ่ายเงิน"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPayoutHeader"
+                app:layout_constraintVertical_bias="0.42000002" />
+
+            <Button
+                android:id="@+id/btnItemDetailAppointMechFinishPayout"
+                style="@style/Button.small"
+                android:layout_width="90dp"
+                android:layout_height="64dp"
+                android:text="ยืนยันการจ่ายเงิน"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPayoutHeader"
+                app:layout_constraintVertical_bias="0.42000002" />
+
+            <TextView
+                android:id="@+id/tvItemDetailAppointMechWaitCustomerRating"
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ดำเนินการครบถ้วนแล้ว รอลูกค้าให้คะแนน"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvItemDetailAppointMechPayoutHeader"
+                app:layout_constraintVertical_bias="0.42000002" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnItemDetailAppointMechDismissAppoint"
+        style="@style/Button.smallRed"
+        android:layout_width="90dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="ยกเลิกนัด" />
+</LinearLayout>

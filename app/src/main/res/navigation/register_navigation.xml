@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_navigation"
+    app:startDestination="@+id/navigation_register_select_role" >
+
+    <fragment
+        android:id="@+id/navigation_register_select_role"
+        android:name="com.example.android.finalyearproject.sign.SelectRoleFragment"
+        tools:layout="@layout/fragment_register_select_role" >
+        <action
+            android:id="@+id/action_navigation_register_select_role_to_navigation_register_mech"
+            app:destination="@id/navigation_register_mech" />
+        <action
+            android:id="@+id/action_navigation_register_select_role_to_navigation_register"
+            app:destination="@id/navigation_register" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_register_mech"
+        android:name="com.example.android.finalyearproject.sign.mech.RegisterMechFragment"
+        tools:layout="@layout/fragment_register_mech" />
+
+    <fragment
+        android:id="@+id/navigation_register"
+        android:name="com.example.android.finalyearproject.sign.customer.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"/>
+
+</navigation>

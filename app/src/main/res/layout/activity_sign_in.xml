@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="100dp" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="214dp"
+        android:layout_height="214dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/tvTitleApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Find Technician"
+        android:textSize="36dp"
+        style="@style/Title" />
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        style="@style/Subtitle"
+        android:layout_marginTop="24dp"
+        tools:text="Username"/>
+
+    <EditText
+    android:id="@+id/edtUsername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/edit_text_background"
+    android:ems="10"
+    android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        style="@style/Subtitle"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/tvSignInRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Subtitle.small"
+            android:text="Sign up" />
+
+        <TextView
+            android:id="@+id/tvSignInDelimiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="|"
+            style="@style/Subtitle.small" />
+
+        <TextView
+            android:id="@+id/tvSignInForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            style="@style/Subtitle.small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="2dp"
+        android:layout_gravity="end"
+        style="@style/Button"
+        android:backgroundTint="@color/green_app"
+        android:textAllCaps="false"
+        android:text="Login" />
+
+</LinearLayout>

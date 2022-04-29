@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".customer.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgProfileCustomer"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_profile_preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgProfileCustomerLoading"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_loading_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnProfileCustomerChangeProfile"
+        style="@style/Button"
+        android:layout_width="110dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="แก้ไขข้อมูล"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfileCustomer" />
+
+    <Button
+        android:id="@+id/btnProfileCustomerLogout"
+        style="@style/Button"
+        android:layout_width="110dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="ออกจากระบบ"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfileCustomerChangeProfile" />
+
+
+    <TextView
+        android:id="@+id/tvProfileCustomerNamePrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="ชื่อ"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerName"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerNamePrefix"
+        tools:text="บังโต หิวหมู" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerRatingPrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="คะแนน"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerName" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerRating"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerRatingPrefix"
+        tools:text="ึ74" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerAddressPrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="ที่อยู่"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerRating" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerAddress"
+        style="@style/Body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerAddressPrefix"
+        tools:text="ึพหลโยธินwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerPhonePrefix"
+        style="@style/Subtitle.black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="เบอร์ติดต่อ"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerAddress" />
+
+    <TextView
+        android:id="@+id/tvProfileCustomerPhone"
+        style="@style/Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/imgProfileCustomer"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerPhonePrefix"
+        tools:text="098-345-1233" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutAmountTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerPhone" >
+
+        <View
+            android:id="@+id/delimiterAmountTask"
+            android:layout_width="0.1dp"
+            android:layout_height="82dp"
+            android:background="@android:color/holo_red_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/delimiterAmountTask"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:id="@+id/tvProfileCustomerSucceedTaskPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="งานที่สำเร็จ"
+                    app:layout_constraintStart_toEndOf="@+id/imgProfileCustomerPreview"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerRating"
+                    tools:text="งานที่สำเร็จ" />
+
+                <TextView
+                    android:id="@+id/tvProfileCustomerSucceedTask"
+                    style="@style/Body.green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="26dp"
+                    tools:text="29" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toEndOf="@+id/delimiterAmountTask"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:id="@+id/tvProfileCustomerFailedTaskPrefix"
+                    style="@style/Subtitle.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="งานที่ไม่สำเร็จ"
+                    app:layout_constraintStart_toEndOf="@+id/tvProfileCustomerSucceedTaskPrefix"
+                    app:layout_constraintTop_toBottomOf="@+id/tvProfileCustomerRating"
+                    tools:text="งานที่ไม่สำเร็จ" />
+
+                <TextView
+                    android:id="@+id/tvProfileCustomerFailedTask"
+                    style="@style/Body.green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="26dp"
+                    tools:text="1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

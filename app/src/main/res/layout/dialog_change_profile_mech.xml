@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgChangeProfileMechimagePreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgChangeProfileMech"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/ic_profile_mech_preview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgChangeProfileMechLoading"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/ic_loading_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnChangeProfileMechChangeImg"
+            style="@style/Button.small"
+            android:layout_width="110dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="28dp"
+            android:text="เปลี่ยนรูปโปรไฟล์"
+            app:layout_constraintStart_toEndOf="@+id/imgChangeProfileMech"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChangeProfileMechTypePrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/Subtitle.black"
+            android:text="ประเภท"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgChangeProfileMech" />
+
+        <HorizontalScrollView
+            android:id="@+id/tvChangeProfileMechType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeProfileMechTypePrefix" >
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/groupChipType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tvChangeProfileMechDescPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="รายละเอียด"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeProfileMechType" />
+
+        <EditText
+            android:id="@+id/edtChangeProfileMechDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            style="@style/Body"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeProfileMechDescPrefix" />
+
+        <TextView
+            android:id="@+id/tvChangeProfileMechAddressPrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ที่อยู่"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtChangeProfileMechDesc" />
+
+        <EditText
+            android:id="@+id/edtChangeProfileMechAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            style="@style/Body"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeProfileMechAddressPrefix" />
+
+        <TextView
+            android:id="@+id/tvChangeProfileMechPhonePrefix"
+            style="@style/Subtitle.black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="เบอร์ติดต่อ"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtChangeProfileMechAddress" />
+
+        <EditText
+            android:id="@+id/edtChangeProfileMechPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            style="@style/Body"
+            android:inputType="phone"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeProfileMechPhonePrefix" />
+
+        <TextView
+            android:id="@+id/tvChangeProfileMechNotFillAllFields"
+            style="@style/WarningMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="46dp"
+            android:text="กรุณากรอกข้อมูลให้ครบทุกช่อง"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtChangeProfileMechPhone"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnChangeProfileMechSubmit"
+            style="@style/Button.small"
+            android:layout_width="86dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="2dp"
+            android:text="ยืนยัน"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtChangeProfileMechPhone" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
