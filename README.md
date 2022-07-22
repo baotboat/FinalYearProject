@@ -6,4 +6,4 @@ uses Kotlin for written in and uses Cloud Firestore as database.
 - This application is divided into 2 parts (user and technicians) which will be divided 
 when logging into the system according to registered ID.
 
-- add new 
+- real new
